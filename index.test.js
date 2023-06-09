@@ -21,6 +21,7 @@ const sudokuValido2 = [
   [2, 3, 1, 4],
 ];
 
+// Testes adicionais pessoais
 const sudokuValido3 = [
   [5, 3, 4, 6, 7, 8, 9, 1, 2],
   [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -73,6 +74,7 @@ const sudokuInvalido1 = [
 
 const sudokuInvalido2 = [[1, 2, 3, 4, 5], [1, 2, 3, 4], [1, 2, 3, 4], [1]];
 
+// Testes adicionais pessoais
 const sudokuInvalido3 = [
   [5, 3, 4, 6, 7, 8, 9, 1, 2],
   [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -112,6 +114,8 @@ const sudokuInvalido5 = [
 test('Sudoku valido', () => {
   expect(sudoku(sudokuValido1)).toBe(true);
   expect(sudoku(sudokuValido2)).toBe(true);
+
+  // Testes adicionais pessoais
   expect(sudoku(sudokuValido3)).toBe(true);
   expect(sudoku(sudokuValido4)).toBe(true);
   expect(sudoku(sudokuValido5)).toBe(true);
@@ -120,6 +124,8 @@ test('Sudoku valido', () => {
 test('Sudoku invalido', () => {
   expect(sudoku(sudokuInvalido1)).toBe(false);
   expect(sudoku(sudokuInvalido2)).toBe(false);
+
+  // Testes adicionais pessoais
   expect(sudoku(sudokuInvalido3)).toBe(false);
   expect(sudoku(sudokuInvalido4)).toBe(false);
   expect(sudoku(sudokuInvalido5)).toBe(false);
